@@ -878,3 +878,81 @@ ul {
         width: calc(100% - 40px);
     }
 }
+/* --- Text Pages (Legal & Policies) --- */
+.pages {
+    padding: 120px 0 80px;
+    /* Отступ сверху с учетом хедера */
+    background-color: var(--color-surface);
+}
+
+.pages__container {
+    max-width: 800px;
+    /* Узкий контейнер для комфортного чтения */
+    margin: 0 auto;
+}
+
+.pages__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.pages h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pages p {
+    font-size: 1.05rem;
+    color: var(--color-text-main);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.pages ul {
+    margin-bottom: 24px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.pages ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    color: var(--color-text-main);
+    line-height: 1.6;
+}
+
+.pages ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.pages strong {
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.pages a {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s;
+}
+
+.pages a:hover {
+    color: var(--color-primary);
+}
